@@ -1,6 +1,7 @@
 .landing {
   display: flex;
-  flex-direction: row;
+  width: 1920px;
+  height: 1080px;
 }
 
 .left-side {
@@ -63,4 +64,4 @@
   margin-top: 3px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
