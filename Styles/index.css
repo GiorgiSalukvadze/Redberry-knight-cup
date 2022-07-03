@@ -1,5 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+}
+
 .landing {
   display: flex;
+  flex-direction: row;
   width: 1920px;
   height: 1080px;
 }
@@ -8,16 +20,15 @@
   flex: 50%;
 }
 
-.photo {
-  height: 85%;
-}
 .photo img {
   width: 100%;
+  height: 978px;
 }
 
 .right-side {
   flex: 50%;
   background-color: #fd5334;
+  width: 100%;
 }
 .right-side h1 {
   position: absolute;
@@ -42,6 +53,7 @@
 }
 .right-side button:hover {
   border-color: #7025fb;
+  cursor: pointer;
 }
 
 .top {
