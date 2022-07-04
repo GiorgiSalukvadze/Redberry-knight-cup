@@ -82,7 +82,7 @@
   .line {
     position: absolute;
     border: 1px solid rgba(185, 180, 196, 0.3);
-    width: 100%;
+    width: 960px;
     top: 84px;
   }
   .switch-parent {
@@ -306,7 +306,7 @@
     border: 1px solid #212529;
     border-radius: 8px;
     background-color: white;
-    div {
+    a {
       display: flex;
       flex-direction: row;
       align-items: center;

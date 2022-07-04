@@ -69,53 +69,20 @@ a:-webkit-any-link {
   text-decoration: none !important;
 }
 
-.landing {
-  flex-direction: row;
+.main {
   width: 1920px;
   height: 1080px;
+  flex-direction: row;
 }
 
 .left-side {
   flex: 50%;
 }
-
-.photo img {
+.left-side .photo img {
   width: 100%;
   height: 996px;
 }
-
-.right-side {
-  flex: 50%;
-  background-color: #fd5334;
-  width: 100%;
-}
-.right-side h1 {
-  position: absolute;
-  padding-top: 270px;
-  color: white;
-  font-size: 80px;
-  padding-left: 75px;
-}
-.right-side h2 {
-  padding-top: 310px;
-  padding-left: 600px;
-}
-.right-side button {
-  width: 170px;
-  height: 45px;
-  background-color: black;
-  margin-left: 85px;
-  margin-top: 250px;
-  border: 3px solid black;
-  border-radius: 10px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.5);
-}
-.right-side button:hover {
-  border-color: #7025fb;
-  cursor: pointer;
-}
-
-.top {
+.left-side .top {
   background-color: #7025fb;
   height: 84px;
   display: flex;
@@ -123,16 +90,62 @@ a:-webkit-any-link {
   padding-left: 80px;
   padding-top: 18px;
 }
-.top img {
+.left-side .top img {
   height: 25px;
   margin-top: 5px;
   margin-right: 5px;
 }
-.top .text {
+.left-side .text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
   color: white;
   margin-top: 3px;
 }
 
-/*# sourceMappingURL=index.css.map */
+.right-side {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
+.right-side div {
+  align-self: center;
+  width: 402px;
+  height: 260.65px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right-side div img {
+  width: 183.89px;
+  height: 190.65px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.right-side div .text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 402px;
+  height: 54px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.right-side div h1 {
+  width: 402px;
+  height: 54px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 150%;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/*# sourceMappingURL=last.css.map */
