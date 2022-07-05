@@ -173,7 +173,7 @@ a:-webkit-any-link {
 }
 .right-side .switch-parent .text-chess {
   position: absolute;
-  width: 131px;
+  width: 151px;
   height: 24px;
   left: 235px;
   top: 44px;
@@ -270,175 +270,157 @@ a:-webkit-any-link {
   color: #95939a;
   margin-top: 10px;
 }
-.right-side .inputs {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
-  position: absolute;
+.right-side .form {
   width: 775px;
-  height: 304px;
-  left: 1008px;
-  top: 481px;
-}
-.right-side .name {
+  height: 445px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  gap: 40px;
+  margin-top: 481px;
+  margin-left: 48px;
+}
+.right-side .form input::placeholder {
+  padding-left: 10px;
+}
+.right-side .form .name {
+  width: 775px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
-  width: 743px;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.000001);
   flex: none;
   order: 0;
-  align-self: stretch;
   flex-grow: 0;
-  cursor: pointer;
+  border: 2px solid #f0f0f0;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }
-.right-side .name :hover {
+.right-side .form .name:hover {
   background: rgba(185, 180, 196, 0.3);
-}
-.right-side .email {
-  width: 743px;
-  height: 30px;
-  border-radius: 4px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  color: #212529;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.right-side .tel {
-  width: 743px;
-  height: 30px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  border-radius: 4px;
-  color: #212529;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.right-side .date {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  border-radius: 4px;
-  width: 743px;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.000001);
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.right-side .button-back :hover {
-  background: rgba(185, 180, 196, 0.3);
-  cursor: pointer;
-}
-.right-side .back {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 13px 24px;
-  gap: 10px;
-  position: absolute;
-  width: 93px;
-  height: 53px;
-  left: 1008px;
-  top: 873px;
-  border: 1px solid #212529;
   border-radius: 8px;
-  background-color: white;
+  cursor: pointer;
 }
-.right-side .back a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 12px;
-  width: 45px;
-  height: 27px;
+.right-side .form .email {
+  width: 775px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
   flex: none;
-  order: 0;
+  order: 1;
   flex-grow: 0;
-}
-.right-side .back a h2 {
-  width: 45px;
-  height: 27px;
+  border: 2px solid #f0f0f0;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 16px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
-  color: #212529;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  line-height: 150%;
 }
-.right-side .next-button {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 13px 24px;
-  gap: 10px;
-  position: absolute;
-  width: 128px;
-  height: 53px;
-  left: 1618px;
-  top: 873px;
+.right-side .form .email:hover {
+  background: rgba(185, 180, 196, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.right-side .form .tel {
+  width: 775px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  border: 2px solid #f0f0f0;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+.right-side .form .tel:hover {
+  background: rgba(185, 180, 196, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.right-side .form .date {
+  width: 775px;
+  height: 46px;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: 2px solid #f0f0f0;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+.right-side .form .date:hover {
+  background: rgba(185, 180, 196, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.right-side .form .button {
+  align-self: flex-end;
+  width: 145px;
+  height: 75px;
   background: #212529;
   border-radius: 8px;
+  z-index: 0;
 }
-.right-side .next-button .next {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 12px;
-  width: 80px;
-  height: 27px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.right-side .form .button img {
+  width: 105px;
+  height: 40px;
 }
-.right-side .next-button .next h2 {
-  width: 44px;
-  height: 27px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
-  color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.right-side .form .button a {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
-.right-side .next-button:hover {
+.right-side .form .button:hover {
   background: #212529;
   border: 4px solid rgba(194, 165, 249, 0.8);
   border-radius: 8px;
   cursor: pointer;
+}
+.right-side .form small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+.right-side .form .form-control.success input {
+  border-color: #2ecc71;
+}
+.right-side .form .form-control.error input {
+  border-color: #e74c3c;
+}
+.right-side .form .form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+  font-family: "Open Sans";
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=second.css.map */

@@ -106,7 +106,7 @@
     }
     .text-chess {
       position: absolute;
-      width: 131px;
+      width: 151px;
       height: 24px;
       left: 235px;
       top: 44px;
@@ -206,180 +206,161 @@
       margin-top: 10px;
     }
   }
-  .inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    position: absolute;
+  .form{
     width: 775px;
-    height: 304px;
-    left: 1008px;
-    top: 481px;
-  }
-  .name {
+    height: 445px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    border-radius: 4px;
-    width: 743px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1e-6);
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    cursor: pointer;
-    :hover {
-      background: rgba(185, 180, 196, 0.3);
+    
+    gap: 40px;
+    margin-top: 481px;
+    margin-left: 48px;
+    input::placeholder{
+      padding-left: 10px;
     }
-  }
-  .email {
-    width: 743px;
-    height: 30px;
-    border-radius: 4px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    color: #212529;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .tel {
-    width: 743px;
-    height: 30px;
-
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    border-radius: 4px;
-    color: #212529;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .date {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    border-radius: 4px;
-    width: 743px;
-    height: 30px;
-    background: rgba(255, 255, 255, 1e-6);
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .button-back {
-    :hover {
-      background: $hover-gr;
+    .name{
+      width: 775px;
+      height: 46px;
+      background: #FFFFFF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      border: 2px solid #f0f0f0;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    .name:hover{
+      background: rgba(185, 180, 196, 0.3);
+      border-radius: 8px;
       cursor: pointer;
     }
-  }
-  .back {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 13px 24px;
-    gap: 10px;
-    position: absolute;
-    width: 93px;
-    height: 53px;
-    left: 1008px;
-    top: 873px;
-    border: 1px solid #212529;
-    border-radius: 8px;
-    background-color: white;
-    a {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0px;
-      gap: 12px;
-
-      width: 45px;
-      height: 27px;
+    .email{
+      width: 775px;
+      height: 46px;
+      background: #FFFFFF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
       flex: none;
-      order: 0;
+      order: 1;
       flex-grow: 0;
-      h2 {
-        width: 45px;
-        height: 27px;
-
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 27px;
-        text-transform: capitalize;
-        color: #212529;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+      border: 2px solid #f0f0f0;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    .email:hover{
+      background: rgba(185, 180, 196, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .tel{
+      width: 775px;
+      height: 46px;
+      background: #FFFFFF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      border: 2px solid #f0f0f0;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    .tel:hover{
+      background: rgba(185, 180, 196, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .date{
+      width: 775px;
+      height: 46px;
+      background: #FFFFFF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      border: 2px solid #f0f0f0;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    .date:hover{
+      background: rgba(185, 180, 196, 0.3);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    .button{
+      align-self: flex-end;
+      width: 145px;
+      height: 75px;
+      background: #212529;
+      border-radius: 8px;
+      z-index: 0;
+      img{
+        width: 105px;
+        height: 40px;
+      }
+      a{
+        width: 100%;
+        height: 100%;
+        z-index: 2;
       }
     }
-  }
-  .next-button {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 13px 24px;
-    gap: 10px;
-    position: absolute;
-    width: 128px;
-    height: 53px;
-    left: 1618px;
-    top: 873px;
-    background: #212529;
-    border-radius: 8px;
-    .next {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0px;
-      gap: 12px;
-      width: 80px;
-      height: 27px;
-      flex: none;
-      order: 0;
-      flex-grow: 0;
-      h2 {
-        width: 44px;
-        height: 27px;
-
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 27px;
-        text-transform: capitalize;
-        color: #ffffff;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-      }
+    
+    .button:hover{
+        background: #212529;
+        border: 4px solid rgba(194, 165, 249, 0.8);
+        border-radius: 8px;
+        cursor: pointer;
+      
     }
-  }
-  .next-button:hover {
-    background: #212529;
-    border: 4px solid rgba(194, 165, 249, 0.8);
-    border-radius: 8px;
-    cursor: pointer;
+    small{
+      color: #e74c3c;
+	    visibility: hidden;
+    }
+    .form-control.success input {
+      border-color: #2ecc71;
+    }
+    .form-control.error input {
+      border-color: #e74c3c;
+    }
+    .form-control.error small{
+      color: #e74c3c;
+      visibility: visible;
+      font-family: 'Open Sans';
+      font-size: 22px;
+    }
+    
   }
 }
