@@ -45,51 +45,35 @@
           <h1 class="title-main">Personal information</h1>
           <h2 class="sub-title">This is basic informaton fields</h2>
         </div>
-        <div class="inputs">
-          <input
-            type="name"
-            class="name"
-            id="name"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            class="email"
-            id="email"
-            placeholder="Email adress"
-            required
-          />
-          <input
-            type="tel"
-            class="tel"
-            id="tel"
-            placeholder="Phone number"
-            required
-          />
-          <input
-            type="text"
+        <form class="form" id="form" method="post" action="chess.html">
+          <div class="form-control">
+            <input type="text" placeholder="Name" class="name" id="name"/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Email adress" class="email" id="email"/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="tel" placeholder="Phone number" class="tel" id="tel"/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="text" 
             class="date"
             id="date"
             placeholder="Date of birth"
             onfocus="(this.type='date')"
             required
           />
-        </div>
-        <div class="button-back">
-          <button class="back">
-            <a href="index.html">
-              <h2>Back</h2>
-            </a>
-          </button>
-        </div>
-        <div class="next-button">
-          <a href="chess.html"class="next">
-            <h2>Next</h2>
-            <img src="./Images/arrow.png" alt="arrow-next" />
-          </a>
-        </div>
+            <small>Error message</small>
+          </div>
+          <button class="button">
+            <img src="./Images/next.png" alt="Next-page">
+          </button> 
+        </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
