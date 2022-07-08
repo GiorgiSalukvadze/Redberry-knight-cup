@@ -206,6 +206,130 @@
           margin-top: 10px;
         }
     }
+    .levelSelector{
+      position: absolute;
+      width: 392px;
+      height: 46px;
+      left: 961px;
+      top: 491px;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 6px;
+      cursor: pointer;
+      p{
+        font-size: 22px;
+        font-family: 'Open Sans';
+      }
+    }  
+    #levelSelectField{
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      img{
+          width: 12px;
+          transition: transform 0.3s;
+     }
+    }
+    #levelList{
+      width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      
+  }
+  li:hover{
+      background: rgba(185, 180, 196, 0.3);
+      
+  }
+  .levelOptions {
+      height: 72px;
+      width: 100%;
+      padding: 15px;
+      list-style: none;
+      cursor: pointer;
+      box-sizing: border-box;
+      position: relative;
+      background: rgba(255, 255, 255, 0.7);
+      img{
+          width: 75px;
+          height: 62px;
+          position: absolute;
+          top: 12px;
+          left: 300px;
+      }
+      
+  } 
+    .selector{
+      position: absolute;
+      width: 392px;
+      height: 46px;
+      left: 1376px;
+      top: 491px;
+      background-color: #FFFFFF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      border-radius: 6px;
+      p{
+        font-size: 22px;
+        font-family: 'Open Sans';
+      }
+      #selectField{
+          width: 100%;
+          padding: 15px 20px;
+          margin-bottom: 30px;
+          box-sizing: border-box;
+          border-radius: 6px;
+          background: rgba(255, 255, 255, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          img{
+              width: 12px;
+              transition: transform 0.3s;
+          }
+      }
+      #list{
+          width: 100%;
+          border-radius: 6px;
+          overflow: hidden;
+          
+      }
+      li:hover{
+          background: rgba(185, 180, 196, 0.3);
+          
+      }
+      .options {
+          height: 72px;
+          width: 100%;
+          padding: 15px;
+          list-style: none;
+          cursor: pointer;
+          box-sizing: border-box;
+          position: relative;
+          background: rgba(255, 255, 255, 0.7);
+          img{
+              width: 75px;
+              height: 62px;
+              position: absolute;
+              top: 12px;
+              left: 300px;
+          }
+          
+      }
+      
+      .rotate{
+          transform: rotate(180deg);
+      }
+      
+  }
+  .hide{
+    visibility: hidden;
+  }
     .button-back {
         :hover {
           background: $hover-gr;

@@ -9,8 +9,8 @@ let phoneBoolean = false;
 let dateBoolean = false;
 const user = {}
 let counter = 1
-user.id = counter
-console.log(user)
+
+
 date.onchange = (e) => {
     localStorage.setItem("date", e.target.value);
 }
@@ -118,4 +118,5 @@ function isPhoneNumber(number) {
 function isDate(date){
     return /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/.test(date)
 }
+
 

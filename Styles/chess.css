@@ -269,6 +269,122 @@ a:-webkit-any-link {
   color: #95939a;
   margin-top: 10px;
 }
+.right-side .levelSelector {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 961px;
+  top: 491px;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.right-side .levelSelector p {
+  font-size: 22px;
+  font-family: "Open Sans";
+}
+.right-side #levelSelectField {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.right-side #levelSelectField img {
+  width: 12px;
+  transition: transform 0.3s;
+}
+.right-side #levelList {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.right-side li:hover {
+  background: rgba(185, 180, 196, 0.3);
+}
+.right-side .levelOptions {
+  height: 72px;
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+}
+.right-side .levelOptions img {
+  width: 75px;
+  height: 62px;
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
+.right-side .selector {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+  background-color: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 6px;
+}
+.right-side .selector p {
+  font-size: 22px;
+  font-family: "Open Sans";
+}
+.right-side .selector #selectField {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.right-side .selector #selectField img {
+  width: 12px;
+  transition: transform 0.3s;
+}
+.right-side .selector #list {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.right-side .selector li:hover {
+  background: rgba(185, 180, 196, 0.3);
+}
+.right-side .selector .options {
+  height: 72px;
+  width: 100%;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+}
+.right-side .selector .options img {
+  width: 75px;
+  height: 62px;
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
+.right-side .selector .rotate {
+  transform: rotate(180deg);
+}
+.right-side .hide {
+  visibility: hidden;
+}
 .right-side .button-back :hover {
   background: rgba(185, 180, 196, 0.3);
   cursor: pointer;
