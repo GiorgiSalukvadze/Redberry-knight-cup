@@ -210,7 +210,7 @@
       position: absolute;
       width: 392px;
       height: 46px;
-      left: 961px;
+      left: 998px;
       top: 491px;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       border-radius: 6px;
@@ -240,7 +240,10 @@
       width: 100%;
       border-radius: 6px;
       overflow: hidden;
-      
+      background: #FFFFFF;
+      border: 1px solid rgba(185, 180, 196, 0.3);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
   }
   li:hover{
       background: rgba(185, 180, 196, 0.3);
@@ -255,20 +258,13 @@
       box-sizing: border-box;
       position: relative;
       background: rgba(255, 255, 255, 0.7);
-      img{
-          width: 75px;
-          height: 62px;
-          position: absolute;
-          top: 12px;
-          left: 300px;
-      }
       
   } 
     .selector{
       position: absolute;
       width: 392px;
       height: 46px;
-      left: 1376px;
+      left: 1414px;
       top: 491px;
       background-color: #FFFFFF;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
@@ -297,7 +293,10 @@
           width: 100%;
           border-radius: 6px;
           overflow: hidden;
-          
+          background: #FFFFFF;
+          border: 1px solid rgba(185, 180, 196, 0.3);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 4px;
       }
       li:hover{
           background: rgba(185, 180, 196, 0.3);
@@ -314,7 +313,7 @@
           background: rgba(255, 255, 255, 0.7);
           img{
               width: 75px;
-              height: 62px;
+              height: 52px;
               position: absolute;
               top: 12px;
               left: 300px;
@@ -329,6 +328,50 @@
   }
   .hide{
     visibility: hidden;
+  }
+  .check-box{
+    padding: 8px 16px;
+    position: absolute;
+    width: 775px;
+    height: 46px;
+    left: 998px;
+    top: 617px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    p{
+      width: 743px;
+      height: 30px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      color: #212529;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+    input[type="radio"] {
+      margin-left: 15px;
+      vertical-align: middle;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      
+    }
+    label{
+      margin-left: 5px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      width: 26px;
+      height: 24px;
+    }
   }
     .button-back {
         :hover {

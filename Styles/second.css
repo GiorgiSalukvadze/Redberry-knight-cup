@@ -69,6 +69,10 @@ a:-webkit-any-link {
   text-decoration: none !important;
 }
 
+span {
+  color: #DC3545;
+}
+
 .landing {
   flex-direction: row;
   width: 1920px;

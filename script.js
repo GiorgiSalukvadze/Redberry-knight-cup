@@ -1,3 +1,4 @@
+
 const form = document.getElementById('form')
 const username = document.getElementById('name')
 const email = document.getElementById('email')
@@ -81,7 +82,7 @@ function checkInputs(){
         setErrorFor(date, 'Date is required')
     }
     
-    if(userNameBoolean || emailBoolean || phoneBoolean || dateBoolean){
+    if(userNameBoolean && emailBoolean && phoneBoolean && dateBoolean){
         user.name = userNameValue
         user.email = emailValue
         user.phone = phoneValue
@@ -92,7 +93,7 @@ function checkInputs(){
     }
     console.log(JSON.parse(localStorage.getItem("user")))
 }
-
+console.log(user)
 function setErrorFor(input,message){
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')

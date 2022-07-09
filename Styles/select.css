@@ -69,6 +69,10 @@ a:-webkit-any-link {
   text-decoration: none !important;
 }
 
+span {
+  color: #DC3545;
+}
+
 .hero {
   width: 100%;
   height: 100vh;

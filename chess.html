@@ -44,9 +44,18 @@
                 <h1 class="title-main">Chess experience</h1>
                 <h2 class="sub-title">This is basic informaton fields</h2>
             </div>
+            <form id="chess-form" action="last.html" method="post">
+            <div class="check-box">
+                <p>Have you participated in the Redberry Championship? <span> *</span></p>
+                <br> 
+                <input type="radio" id="yes" name="participation" value="true">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="participation" value="false">
+                <label for="no">No</label>  
+              </div>  
             <div class="levelSelector">
                 <div id="levelSelectField">
-                    <p id="levelSelectText">Level of knowledge</p>
+                    <p id="levelSelectText">Level of knowledge <span> *</span></p>
                     <img src="./images/select-arrow.png" id="levelArrowIcon">
                 </div>
                 <ul id="levelList" class="hide">
@@ -63,30 +72,30 @@
             </div>
             <div class="selector">
                 <div id="selectField">
-                    <p id="selectText">Choose your character</p>
+                    <p id="selectText">Choose your character <span> *</span></p>
                     <img src="./images/select-arrow.png" id="arrowIcon">
                 </div>
                 
                 <ul id="list" class="hide">
                     <li class="options">
-                        <img src="./images/Frame 9.png" id="img-0">
-                        <p id="p-0">magnus carlsen</p>
+                        <img src="" id="img-0">
+                        <p id="p-0"></p>
                     </li>
                     <li class="options">
-                        <img src="./images/Frame 9.png" id="img-1">
-                        <p  id="p-1">come on</p>
+                        <img src="" id="img-1">
+                        <p  id="p-1"></p>
                     </li>
                     <li class="options">
-                        <img src="./images/Frame 9.png" id="img-2">
-                        <p id="p-2">siu</p>
+                        <img src="" id="img-2">
+                        <p id="p-2"></p>
                     </li>
                     <li class="options">
-                        <img src="./images/Frame 9.png" id="img-3">
-                        <p id="p-3">ronaldo</p>
+                        <img src="" id="img-3">
+                        <p id="p-3"></p>
                     </li>
                 </ul>
             </div>
-            
+              
                 <div class="button-back">
                     <div class="button-back">
                         <button class="back">
@@ -99,12 +108,12 @@
                 <div class="button-next">
                     <div class="next-button">
                         <a href="last.html"class="next">
-                          <h2>Next</h2>
-                          <img src="./Images/arrow.png" alt="arrow-next" />
+                          <h2>Done</h2>
+                          
                         </a>
                     </div>
                 </div>
-            
+            </form>
         </div>
     </div>
     <script src="chess.js"></script>

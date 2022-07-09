@@ -69,6 +69,10 @@ a:-webkit-any-link {
   text-decoration: none !important;
 }
 
+span {
+  color: #DC3545;
+}
+
 .main {
   width: 1920px;
   height: 1080px;
@@ -273,7 +277,7 @@ a:-webkit-any-link {
   position: absolute;
   width: 392px;
   height: 46px;
-  left: 961px;
+  left: 998px;
   top: 491px;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 6px;
@@ -303,6 +307,10 @@ a:-webkit-any-link {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 .right-side li:hover {
   background: rgba(185, 180, 196, 0.3);
@@ -317,18 +325,11 @@ a:-webkit-any-link {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
 }
-.right-side .levelOptions img {
-  width: 75px;
-  height: 62px;
-  position: absolute;
-  top: 12px;
-  left: 300px;
-}
 .right-side .selector {
   position: absolute;
   width: 392px;
   height: 46px;
-  left: 1376px;
+  left: 1414px;
   top: 491px;
   background-color: #FFFFFF;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
@@ -358,6 +359,10 @@ a:-webkit-any-link {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 .right-side .selector li:hover {
   background: rgba(185, 180, 196, 0.3);
@@ -374,7 +379,7 @@ a:-webkit-any-link {
 }
 .right-side .selector .options img {
   width: 75px;
-  height: 62px;
+  height: 52px;
   position: absolute;
   top: 12px;
   left: 300px;
@@ -384,6 +389,49 @@ a:-webkit-any-link {
 }
 .right-side .hide {
   visibility: hidden;
+}
+.right-side .check-box {
+  padding: 8px 16px;
+  position: absolute;
+  width: 775px;
+  height: 46px;
+  left: 998px;
+  top: 617px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+.right-side .check-box p {
+  width: 743px;
+  height: 30px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.right-side .check-box input[type=radio] {
+  margin-left: 15px;
+  vertical-align: middle;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.right-side .check-box label {
+  margin-left: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 26px;
+  height: 24px;
 }
 .right-side .button-back :hover {
   background: rgba(185, 180, 196, 0.3);
