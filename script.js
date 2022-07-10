@@ -83,17 +83,12 @@ function checkInputs(){
     }
     
     if(userNameBoolean && emailBoolean && phoneBoolean && dateBoolean){
-        user.name = userNameValue
-        user.email = emailValue
-        user.phone = phoneValue
-        user.date = dateValue
-        user.id = counter++
         localStorage.setItem("user", JSON.stringify(user))
         location.href="chess.html"
     }
     console.log(JSON.parse(localStorage.getItem("user")))
 }
-console.log(user)
+
 function setErrorFor(input,message){
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')

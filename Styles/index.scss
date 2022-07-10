@@ -31,6 +31,13 @@
   h2 {
     padding-top: 310px;
     padding-left: 600px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #212529;
   }
   button {
     width: 170px;
@@ -60,10 +67,9 @@
     margin-right: 5px;
   }
   .text {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Nunito";
     font-size: 25px;
     color: white;
-    margin-top: 3px;
+    margin-top: 8px;
   }
 }

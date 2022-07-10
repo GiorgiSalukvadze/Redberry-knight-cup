@@ -29,11 +29,10 @@
     }
   }
   .text {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
+    font-family: "Nunito";
     font-size: 25px;
     color: white;
-    margin-top: 3px;
+    margin-top: 8px;
   }
   .quote {
     font-family: "Nunito";
@@ -206,23 +205,20 @@
       margin-top: 10px;
     }
   }
-  .form{
+  .form {
     width: 775px;
     height: 445px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
     gap: 40px;
     margin-top: 481px;
     margin-left: 48px;
-    input::placeholder{
-      padding-left: 10px;
-    }
-    .name{
+    .name {
       width: 775px;
       height: 46px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       border-radius: 4px;
       flex: none;
@@ -233,21 +229,22 @@
       resize: none;
       outline: none;
       font-size: 16px;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
+      padding-left: 12px;
     }
-    .name:hover{
+    .name:hover {
       background: rgba(185, 180, 196, 0.3);
       border-radius: 8px;
       cursor: pointer;
     }
-    .email{
+    .email {
       width: 775px;
       height: 46px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       border-radius: 4px;
       flex: none;
@@ -258,21 +255,22 @@
       resize: none;
       outline: none;
       font-size: 16px;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
+      padding-left: 12px;
     }
-    .email:hover{
+    .email:hover {
       background: rgba(185, 180, 196, 0.3);
       border-radius: 8px;
       cursor: pointer;
     }
-    .tel{
+    .tel {
       width: 775px;
       height: 46px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       border-radius: 4px;
       flex: none;
@@ -283,21 +281,22 @@
       resize: none;
       outline: none;
       font-size: 16px;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
+      padding-left: 12px;
     }
-    .tel:hover{
+    .tel:hover {
       background: rgba(185, 180, 196, 0.3);
       border-radius: 8px;
       cursor: pointer;
     }
-    .date{
+    .date {
       width: 775px;
       height: 46px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       border-radius: 4px;
       flex: none;
@@ -308,46 +307,84 @@
       resize: none;
       outline: none;
       font-size: 16px;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
+      padding-left: 12px;
     }
-    .date:hover{
+    .date:hover {
       background: rgba(185, 180, 196, 0.3);
       border-radius: 8px;
       cursor: pointer;
     }
-    
-    .button{
-      align-self: flex-end;
-      width: 145px;
-      height: 75px;
+
+    .button-back {
+      align-self: flex-start;
+      justify-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 93px;
+      height: 53px;
+      border: 1px solid #212529;
+      border-radius: 8px;
+      a {
+        width: 93px;
+        height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h2 {
+        width: 45px;
+        height: 27px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #212529;
+      }
+    }
+    .button-back:hover {
+      cursor: pointer;
+      background: $hover-gr;
+    }
+
+    .button {
+      position: absolute;
+      left: 1655px;
+      top: 944px;
+      width: 128px;
+      height: 53px;
       background: #212529;
       border-radius: 8px;
       z-index: 0;
-      img{
-        width: 105px;
-        height: 40px;
+      img {
+        width: 85px;
+        height: 35px;
+        padding: 2px 5px;
       }
-      a{
+      a {
         width: 100%;
         height: 100%;
         z-index: 2;
       }
     }
-    
-    .button:hover{
-        background: #212529;
-        border: 4px solid rgba(194, 165, 249, 0.8);
-        border-radius: 8px;
-        cursor: pointer;
-      
+
+    .button:hover {
+      background: #212529;
+      border: 4px solid rgba(194, 165, 249, 0.8);
+      border-radius: 8px;
+      cursor: pointer;
     }
-    small{
+    small {
       color: #e74c3c;
-	    visibility: hidden;
+      visibility: hidden;
     }
     .form-control.success input {
       border-color: #2ecc71;
@@ -355,12 +392,11 @@
     .form-control.error input {
       border-color: #e74c3c;
     }
-    .form-control.error small{
+    .form-control.error small {
       color: #e74c3c;
       visibility: visible;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
       font-size: 22px;
     }
-    
   }
 }

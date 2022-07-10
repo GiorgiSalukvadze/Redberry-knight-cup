@@ -59,6 +59,7 @@ table {
 body {
   width: 1920px;
   height: 1080px;
+  position: fixed;
 }
 
 .flex {
@@ -70,7 +71,7 @@ a:-webkit-any-link {
 }
 
 span {
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .landing {
@@ -100,10 +101,10 @@ span {
   margin-right: 5px;
 }
 .left-side .text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Nunito";
   font-size: 25px;
   color: white;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 .left-side .quote {
   font-family: "Nunito";
@@ -284,13 +285,10 @@ span {
   margin-top: 481px;
   margin-left: 48px;
 }
-.right-side .form input::placeholder {
-  padding-left: 10px;
-}
 .right-side .form .name {
   width: 775px;
   height: 46px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   flex: none;
@@ -306,6 +304,7 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+  padding-left: 12px;
 }
 .right-side .form .name:hover {
   background: rgba(185, 180, 196, 0.3);
@@ -315,7 +314,7 @@ span {
 .right-side .form .email {
   width: 775px;
   height: 46px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   flex: none;
@@ -331,6 +330,7 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+  padding-left: 12px;
 }
 .right-side .form .email:hover {
   background: rgba(185, 180, 196, 0.3);
@@ -340,7 +340,7 @@ span {
 .right-side .form .tel {
   width: 775px;
   height: 46px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   flex: none;
@@ -356,6 +356,7 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+  padding-left: 12px;
 }
 .right-side .form .tel:hover {
   background: rgba(185, 180, 196, 0.3);
@@ -365,7 +366,7 @@ span {
 .right-side .form .date {
   width: 775px;
   height: 46px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   flex: none;
@@ -381,23 +382,61 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+  padding-left: 12px;
 }
 .right-side .form .date:hover {
   background: rgba(185, 180, 196, 0.3);
   border-radius: 8px;
   cursor: pointer;
 }
+.right-side .form .button-back {
+  align-self: flex-start;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 93px;
+  height: 53px;
+  border: 1px solid #212529;
+  border-radius: 8px;
+}
+.right-side .form .button-back a {
+  width: 93px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side .form .button-back h2 {
+  width: 45px;
+  height: 27px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #212529;
+}
+.right-side .form .button-back:hover {
+  cursor: pointer;
+  background: rgba(185, 180, 196, 0.3);
+}
 .right-side .form .button {
-  align-self: flex-end;
-  width: 145px;
-  height: 75px;
+  position: absolute;
+  left: 1655px;
+  top: 944px;
+  width: 128px;
+  height: 53px;
   background: #212529;
   border-radius: 8px;
   z-index: 0;
 }
 .right-side .form .button img {
-  width: 105px;
-  height: 40px;
+  width: 85px;
+  height: 35px;
+  padding: 2px 5px;
 }
 .right-side .form .button a {
   width: 100%;

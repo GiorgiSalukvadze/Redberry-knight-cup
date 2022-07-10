@@ -1,121 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/chess.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/chess.css" />
 
     <title>Registration-Chess experience</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main flex">
-        <div class="left-side">
-            <div class="top">
-                <img src="./Images/Vector.png" alt="vector-logo" />
-                <h3 class="text">Redberry Knight Cup</h3>
-            </div>
-            <div class="photo">
-                <img src="./Images/chess-photo.png" alt="chess-photo">
-                <h1 class="quote">“Many have become chess masters;<br> 
-                    no one has become the master of chess.”</h1>
-                <h2 class="author">- Siegbert Tarrasch</h2>
-            </div>
+      <div class="left-side">
+        <div class="top">
+          <img src="./Images/Vector.png" alt="vector-logo" />
+          <h3 class="text">Redberry Knight Cup</h3>
         </div>
-        <div class="right-side">
-            <div class="top">
-                <h3 class="account flex">First step is done, continue to finish onboarding</h3>
-                <hr class="line" />
-            </div>
-            <div class="switch-parent flex">
-                <h2 class="text-personal">Personal information</h2>
-                <h3 class="text-chess">Chess experience</h3>
-                <div class="switch flex">
-                  <div class="personal-info">
-                    <img src="./Images/Frame 9.png" alt="Success">
-                  </div>
-                  <hr class="connector" />
-                  <div class="experience">
-                    <h3>2</h3>
-                  </div>
-                </div>
-            </div>
-            <div class="title">
-                <h1 class="title-main">Chess experience</h1>
-                <h2 class="sub-title">This is basic informaton fields</h2>
-            </div>
-            <form id="chess-form" action="last.html" method="post">
-            <div class="check-box">
-                <p>Have you participated in the Redberry Championship? <span> *</span></p>
-                <br> 
-                <input type="radio" id="yes" name="participation" value="true">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="participation" value="false">
-                <label for="no">No</label>  
-              </div>  
-            <div class="levelSelector">
-                <div id="levelSelectField">
-                    <p id="levelSelectText">Level of knowledge <span> *</span></p>
-                    <img src="./images/select-arrow.png" id="levelArrowIcon">
-                </div>
-                <ul id="levelList" class="hide">
-                    <li class="levelOptions">
-                        <p>Begginer</p>
-                    </li>
-                    <li class="levelOptions">
-                        <p>Intermediate</p>
-                    </li>
-                    <li class="levelOptions">
-                        <p>Professional</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="selector">
-                <div id="selectField">
-                    <p id="selectText">Choose your character <span> *</span></p>
-                    <img src="./images/select-arrow.png" id="arrowIcon">
-                </div>
-                
-                <ul id="list" class="hide">
-                    <li class="options">
-                        <img src="" id="img-0">
-                        <p id="p-0"></p>
-                    </li>
-                    <li class="options">
-                        <img src="" id="img-1">
-                        <p  id="p-1"></p>
-                    </li>
-                    <li class="options">
-                        <img src="" id="img-2">
-                        <p id="p-2"></p>
-                    </li>
-                    <li class="options">
-                        <img src="" id="img-3">
-                        <p id="p-3"></p>
-                    </li>
-                </ul>
-            </div>
-              
-                <div class="button-back">
-                    <div class="button-back">
-                        <button class="back">
-                          <a href="second.html">
-                            <h2>Back</h2>
-                          </a>
-                        </button>
-                    </div>
-                </div>
-                <div class="button-next">
-                    <div class="next-button">
-                        <a href="last.html"class="next">
-                          <h2>Done</h2>
-                          
-                        </a>
-                    </div>
-                </div>
-            </form>
+        <div class="photo">
+          <img src="./Images/chess-photo.png" alt="chess-photo" />
+          <h1 class="quote">
+            “Many have become chess masters;<br />
+            no one has become the master of chess.”
+          </h1>
+          <h2 class="author">- Siegbert Tarrasch</h2>
         </div>
+      </div>
+      <div class="right-side">
+        <div class="error hide" id="error-div">
+          <img src="./Images/Vectorr.png" alt="" />
+          <p class="err-msg" id="err-msg">invalidi xar kvero</p>
+          <button class="close-btn" onclick="dissapear()">&times;</button>
+          <hr />
+          <p class="err-content" id="err-content">rame kleoba ra</p>
+        </div>
+        <div class="top">
+          <h3 class="account flex">
+            First step is done, continue to finish onboarding
+          </h3>
+          <hr class="line" />
+        </div>
+        <div class="switch-parent flex">
+          <h2 class="text-personal">Personal information</h2>
+          <h3 class="text-chess">Chess experience</h3>
+          <div class="switch flex">
+            <div class="personal-info">
+              <img src="./Images/Frame 9.png" alt="Success" />
+            </div>
+            <hr class="connector" />
+            <div class="experience">
+              <h3>2</h3>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h1 class="title-main">Chess experience</h1>
+          <h2 class="sub-title">This is basic informaton fields</h2>
+        </div>
+        <form id="chess-form" action="last.html" method="post">
+          <div class="check-box">
+            <p>
+              Have you participated in the Redberry Championship?
+              <span> *</span>
+            </p>
+            <br />
+            <input type="radio" id="yes" name="participation" value="Yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="participation" value="No" />
+            <label for="no">No</label>
+          </div>
+          <div class="levelSelector">
+            <div id="levelSelectField">
+              <p id="levelSelectText">Level of knowledge <span> *</span></p>
+              <img src="./images/select-arrow.png" id="levelArrowIcon" />
+            </div>
+            <ul id="levelList" class="hide">
+              <li class="levelOptions">
+                <p>Beginner</p>
+              </li>
+              <li class="levelOptions">
+                <p>Intermediate</p>
+              </li>
+              <li class="levelOptions">
+                <p>Professional</p>
+              </li>
+            </ul>
+          </div>
+          <div class="selector">
+            <div id="selectField">
+              <p id="selectText">Choose your character <span> *</span></p>
+              <img src="./images/select-arrow.png" id="arrowIcon" />
+            </div>
+
+            <ul id="list" class="hide">
+              <li class="options">
+                <img src="" id="img-0" />
+
+                <p id="p-0"></p>
+              </li>
+              <li class="options">
+                <img src="" id="img-1" />
+
+                <p id="p-1"></p>
+              </li>
+              <li class="options">
+                <img src="" id="img-2" />
+
+                <p id="p-2"></p>
+              </li>
+              <li class="options">
+                <img src="" id="img-3" />
+
+                <p id="p-3"></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="button-back">
+            <a href="second.html">
+              <h2>Back</h2>
+            </a>
+          </div>
+
+          <div class="button-next">
+            <div class="next-button">
+              <button>Done</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="chess.js"></script>
-</body>
+  </body>
 </html>

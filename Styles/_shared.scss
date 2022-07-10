@@ -11,13 +11,14 @@
 body {
   width: 1920px;
   height: 1080px;
+  position: fixed;
 }
 .flex {
   display: flex;
 }
-a:-webkit-any-link{
+a:-webkit-any-link {
   text-decoration: none !important;
 }
-span{
-  color: #DC3545;
+span {
+  color: #dc3545;
 }

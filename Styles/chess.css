@@ -59,6 +59,7 @@ table {
 body {
   width: 1920px;
   height: 1080px;
+  position: fixed;
 }
 
 .flex {
@@ -70,7 +71,7 @@ a:-webkit-any-link {
 }
 
 span {
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .main {
@@ -112,7 +113,7 @@ span {
   font-size: 24px;
   line-height: 33px;
   text-transform: uppercase;
-  color: #093F68;
+  color: #093f68;
 }
 .left-side .top {
   background-color: #7025fb;
@@ -128,14 +129,57 @@ span {
   margin-right: 5px;
 }
 .left-side .text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Nunito";
   font-size: 25px;
   color: white;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 
 .right-side {
   flex: 50%;
+}
+.right-side .error {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
+  width: 350px;
+  height: 87px;
+  left: 1531px;
+  top: 226px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.right-side .error img {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+.right-side .error hr {
+  position: absolute;
+  left: 0;
+  top: 39px;
+  width: 350px;
+  height: 0px;
+  opacity: 0.05;
+  border: 1px solid #000000;
+}
+.right-side .err-msg {
+  width: 272px;
+  height: 21px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #dc3545;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 .right-side .account {
   justify-content: flex-start;
@@ -148,6 +192,24 @@ span {
   line-height: 150%;
   text-transform: capitalize;
   color: #212529;
+}
+.right-side .err-content {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+.right-side .close-btn {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  left: 310px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
 }
 .right-side .line {
   position: absolute;
@@ -307,7 +369,7 @@ span {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(185, 180, 196, 0.3);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -331,7 +393,7 @@ span {
   height: 46px;
   left: 1414px;
   top: 491px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 6px;
 }
@@ -359,7 +421,7 @@ span {
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(185, 180, 196, 0.3);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -397,7 +459,7 @@ span {
   height: 46px;
   left: 998px;
   top: 617px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
 }
 .right-side .check-box p {
@@ -433,38 +495,27 @@ span {
   width: 26px;
   height: 24px;
 }
-.right-side .button-back :hover {
-  background: rgba(185, 180, 196, 0.3);
-  cursor: pointer;
-}
-.right-side .back {
+.right-side .button-back {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 13px 24px;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 93px;
   height: 53px;
-  left: 1008px;
+  left: 1014px;
   top: 873px;
   border: 1px solid #212529;
   border-radius: 8px;
-  background-color: white;
 }
-.right-side .back a {
+.right-side .button-back a {
+  width: 93px;
+  height: 53px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 12px;
-  width: 45px;
-  height: 27px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  justify-content: center;
 }
-.right-side .back a h2 {
+.right-side .button-back h2 {
   width: 45px;
   height: 27px;
   font-family: "Open Sans";
@@ -474,16 +525,17 @@ span {
   line-height: 27px;
   text-transform: capitalize;
   color: #212529;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+.right-side .button-back:hover {
+  cursor: pointer;
+  background: rgba(185, 180, 196, 0.3);
 }
 .right-side .next-button {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 13px 24px;
-  gap: 10px;
   position: absolute;
   width: 128px;
   height: 53px;
@@ -491,22 +543,12 @@ span {
   top: 873px;
   background: #212529;
   border-radius: 8px;
+  cursor: pointer;
 }
-.right-side .next-button .next {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 12px;
-  width: 80px;
-  height: 27px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.right-side .next-button .next h2 {
-  width: 44px;
-  height: 27px;
+.right-side .next-button button {
+  background: #212529;
+  width: 85px;
+  height: 35px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -517,12 +559,12 @@ span {
   flex: none;
   order: 0;
   flex-grow: 0;
+  cursor: pointer;
 }
 .right-side .next-button:hover {
   background: #212529;
   border: 4px solid rgba(194, 165, 249, 0.8);
   border-radius: 8px;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=chess.css.map */
