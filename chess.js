@@ -66,7 +66,7 @@ fetch(url)
     // Examine the text in the response
     response.json().then(function (data) {
       for (let i = 0; i < data.length; i++) {
-        let url = "." + data[i].image;
+        let url = "https://chess-tournament-api.devtest.ge" + data[i].image;
 
         document.getElementById(`img-${i}`).src = url;
         document.getElementById(`p-${i}`).innerHTML = data[i].name;
